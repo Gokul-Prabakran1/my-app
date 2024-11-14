@@ -1,18 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Student Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .profile-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        .profile-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile-photo {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .profile-details h2 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .profile-details p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .profile-details strong {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container-fluid">
-  <h1>WEBHOOk, I have successfully deployed my first part of the DevOps project!</h1>
-</div>
+    <div class="profile-container">
+        <div class="header">
+            <h1>Student Profile</h1>
+            <p>Personal and Academic Information</p>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-photo">
+                <img src="https://via.placeholder.com/150" alt="Student Photo">
+            </div>
+
+            <div class="profile-details">
+                <h2>John Doe</h2>
+                <p><strong>Age:</strong> 21</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +91 9876543210</p>
+                <p><strong>Address:</strong> 123, Park Avenue, Chennai, India</p>
+                <h3>Academic Information</h3>
+                <p><strong>University:</strong> Sri Venkateswara College of Technology</p>
+                <p><strong>Specialization:</strong> Artificial Intelligence & Data Science</p>
+                <p><strong>CGPA:</strong> 8.7</p>
+                <p><strong>Year of Graduation:</strong> 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Student Profile. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
